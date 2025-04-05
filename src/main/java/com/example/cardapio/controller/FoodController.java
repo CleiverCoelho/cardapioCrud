@@ -13,6 +13,7 @@ import java.util.List;
 @RequestMapping("food")
 public class FoodController {
     // permite que o spring gerencie dependencias que meu controler usa
+    // injeção de dependencia
     @Autowired()
     private FoodRepository foodRepository;
     @CrossOrigin(origins = "*", allowedHeaders = "*")
